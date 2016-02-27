@@ -1,5 +1,6 @@
 # menu calc
-Calculator for Rofi/dmenu(2)
+Calculator for Rofi/dmenu(2)  
+[Screencast](https://gfycat.com/SociableDopeyHerald)
 
 #####usage:
 menu calc uses bc as the backend and will accept any operations bc is able to do  
