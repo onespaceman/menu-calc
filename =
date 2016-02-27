@@ -15,7 +15,7 @@ usage() {
     = c(2)
 
     The answer can be used for further calculations
-    
+
     The expression may need quotation marks if
     launched outside of Rofi/dmenu"
     exit
@@ -26,12 +26,12 @@ case $1 in
 esac
 
 # Path to menu application
-if [[ $(which rofi) != *"not found"* ]]; then
-    menu="$(which rofi) -dmenu"
-elif [[ $(which dmenu) != *"not found"* ]]; then
-    menu="$(which dmenu)"
+if [[ -n $(command -v rofi) ]]; then
+    menu="$(command -v rofi) -dmenu"
+elif [[ -n $(command -v dmenu) ]]; then
+    menu="$(command -v dmenu)"
 else
-    echo "Rofi or dmenu not found"
+    echo >&2 "Rofi or dmenu not found"
     exit
 fi
 
