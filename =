@@ -8,16 +8,16 @@ usage() {
     echo "    $(tput bold)menu calc$(tput sgr0)
     A calculator for use with Rofi or dmenu(2)
     Basic usage:
-    = \"4+2\"
-    = \"(4+2)/(4+3)\"
-    = \"4^2\"
-    = \"sqrt(4)\"
-    = \"c(2)\"
+    = 4+2
+    = (4+2)/(4+3)
+    = 4^2
+    = sqrt(4)
+    = c(2)
 
-    Operations may or may not work if not enclosed in quotations
-
-    The answer can be used for further calculations inside your
-    menu application"
+    The answer can be used for further calculations
+    
+    The expression may need quotation marks if
+    launched outside of Rofi/dmenu"
     exit
 }
 
