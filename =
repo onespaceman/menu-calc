@@ -44,5 +44,6 @@ case $action in
     "Clear") $0 ;;
     "Copy to clipboard") echo -n "$answer" | xclip ;;
     "Close") ;;
+    "") ;;
     *) $0 "$answer $action" ;;
 esac
